@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0"
+	xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.Controller2">
+	<children>
+		<ImageView pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../view2.png" />
+			</image>
+		</ImageView>
+		<Label fx:id="pseudo" layoutX="74.0" layoutY="14.0"
+			text="pseudo" textFill="WHITE">
+			<font>
+				<Font size="27.0" />
+			</font>
+		</Label>
+		<Label fx:id="textEcran" layoutX="135.0" layoutY="300.0"
+			prefHeight="79.0" prefWidth="330.0" text="Label"
+			textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font size="29.0" />
+			</font>
+		</Label>
+		<Label fx:id="prixEcran" layoutX="131.0" layoutY="376.0"
+			prefHeight="115.0" prefWidth="338.0" text="Label"
+			textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font size="73.0" />
+			</font>
+		</Label>
+		<TextField fx:id="prixInput" layoutX="131.0" layoutY="521.0"
+			onAction="#prixInput" prefHeight="58.0" prefWidth="338.0"
+			promptText="prix">
+			<font>
+				<Font size="27.0" />
+			</font>
+		</TextField>
+		<Button fx:id="profil" layoutX="10.0" layoutY="7.0"
+			mnemonicParsing="false" onAction="#profil" opacity="0.0"
+			prefHeight="58.0" prefWidth="58.0" text="Button" />
+		<Button fx:id="rejouer" layoutX="534.0" layoutY="7.0"
+			mnemonicParsing="false" onAction="#rejouer" opacity="0.0"
+			prefHeight="58.0" prefWidth="58.0" text="Button" />
+		<ImageView fx:id="logo" fitHeight="150.0" fitWidth="200.0"
+			layoutX="194.0" layoutY="44.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="@../../Logo.png" />
+			</image>
+		</ImageView>
+	</children>
+</AnchorPane>
